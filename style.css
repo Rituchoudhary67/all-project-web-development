@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --color:white;
+    --bg-color:black;
+    --b-width:10%;
+    --a-name:song;
+    --a-iter-cont:infinite;
+}
+.header {
+    position: sticky;
+background-color:var(--bg-color);
+display: flex;
+justify-content: space-between;
+cursor: pointer;
+}
+.logo {
+    display: flex;
+}
+.logo h1 {
+    padding: 20px;
+    margin-left: -20px;
+    color:var(--color) ;
+    cursor: pointer;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#youtube {
+    padding: 25px;
+    color: red;
+    font-size: 1.5pc;
+
+}
+.middle button {
+    margin: 10px;
+    padding: 5px;
+    color: gray;
+    background-color:var(--bg-color) ;
+    font-size:1.7pc;
+    cursor: pointer;
+}
+.middle button:hover {
+    color: var(--color);
+}
+#setting {
+    color: var(--color);
+    padding: 25px;
+}
+.content {
+    width: 100%;
+    background-color: var(--bg-color);
+}
+.player {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    color: white;
+    /* align-items: center; */
+}
+.animation {
+    background-image: url("lata\ di.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 300px;
+    
+    /* display: flex; */
+    /* justify-content: space-around; */
+    /* align-items: end; */
+
+}
+.bar {
+    background-color: var(--bg-color);
+    /* width: var(--b-width); */
+    animation-name: var(--a-name);
+    animation-iteration-count: var(--a-iter-cont);
+    background-color:pink;
+    /* color: white; */
+    height: 5%;
+    width: 2%;
+    margin: 10%;
+    /* display: flex; */
+    /* justify-content: space-around; */
+    /* align-items: end; */
+    /* flex-direction: column; */
+}
+.one {
+    animation-duration: .63s;
+
+}
+.two {
+    animation-duration:.59s;
+}
+.three {
+    animation-duration:.67s;
+}
+.four {
+    animation-duration:.63s;
+}
+.five {
+    animation-duration:.62s;
+}
+@keyframes song {
+    0% {
+        height: 0%;
+    } 
+    50% {
+        height: 90%;
+    }
+    100% {
+        height: 0%;
+    }
+}
