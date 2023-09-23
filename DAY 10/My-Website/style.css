@@ -1,0 +1,54 @@
+
+header {
+    color:white;
+    text-align:center;
+    background-color: blueviolet;
+    padding:20px;
+}
+header h1 {
+    margin:0;
+}
+nav{
+    background-color: blueviolet;
+   padding: 20px;
+   text-align: center;
+   color:white;
+
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;;
+    display:inline-block
+    
+}
+nav ul li {
+    color:white;
+    display:inline-block;
+    margin-right: 20px;
+}
+nav a {
+    text-decoration: none;
+    color:white;
+}
+main {
+    text-align:center;
+}
+main button {
+    color:white;
+    padding: 10px;
+    background: blueviolet;
+    border:none;
+    border-radius:5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: rgba(132, 0, 255, 0.61);
+}
+footer {
+    text-align:center;
+    background: blueviolet;
+    color:white;
+    padding:20px;
+    margin:10px;
+}

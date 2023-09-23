@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUE-ANS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Croissant+One&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<style>
+* {
+    text-align: center;
+    font-family: 'Croissant One', cursive;
+    background: linear-gradient(rgba(107, 180, 164, 0.596),rgba(168, 69, 226, 0.479));
+}
+h1,.question, .answer {
+    background-color: antiquewhite;
+}
+input,button {
+    background-color:whitesmoke;
+}
+button:hover {
+    background-color: rgb(214, 69, 214);
+    cursor: pointer;
+    border: 2px solid grey;
+}
+
+</style>
+<body>
+    <h1>HTML and CSS Quize</h1>
+    <div class="question">
+        Q.1 What is HTML ?
+    </div>
+    <div class="answer">
+        <input type="text" id="ansOne">
+        <button onclick="checkAnsOne()">Submit</button>
+        <p id="result-one"></p>
+    </div>
+     <div class="question">
+        Q.2 How many type of CSS Selectors(In Number) ?
+    </div>
+    <div class="answer">
+        <input type="number" id="ansTwo">
+        <button onclick="checkAnsTwo()">Submit</button>
+        <p id="result-two"></p>
+    </div>
+    <div class="question">
+        Q3. How many ways are there to add CSS to HTML file(In Number)?
+    </div>
+    <div class="answer">
+        <input type="number"  id="ansThree">
+        <button onclick="checkAnsThree()">Submit</button>
+        <p id="result-three"></p>
+    </div>
+</body>
+<script>
+    function checkAnsOne() {
+        var answer = document.getElementById("ansOne").value;
+        if (answer.toLowerCase() === "hyper text markup language" || answer.toLowerCase() === "Hyper Text Markup Language") {
+            document.getElementById("result-one").innerHTML = "Correct!";
+        } else {
+            document.getElementById("result-one").innerHTML = "Incorrect. Try again!"
+        }
+    }
+    function checkAnsTwo() {
+        var answer = document.getElementById("ansTwo").value;
+        if (answer.toLowerCase() === "5") {
+            document.getElementById("result-two").innerHTML = "Correct!";
+        } else {
+            document.getElementById("result-two").innerHTML = "Incorrect. Try again!"
+        }
+    }
+    function checkAnsThree() {
+        var answer = document.getElementById("ansThree").value;
+        if(answer == "3"){
+            document.getElementById("result-three").innerHTML = "Correct!";
+        } else {
+            document.getElementById("result-three").innerHTML = "Incorrect Try again!"
+        }
+    }
+</script>
+</html>
